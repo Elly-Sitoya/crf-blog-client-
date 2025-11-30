@@ -1,0 +1,90 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.landing-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.landing-content {
+  background: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.landing-logo {
+  margin-bottom: 30px;
+}
+
+.landing-logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+.landing-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-family: 'Merriweather', serif;
+}
+
+.blog-page-link {
+  display: inline-block;
+  padding: 15px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  font-family: 'Merriweather', serif;
+}
+
+.blog-page-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.blog-page-link:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .landing-content {
+    padding: 40px 30px;
+  }
+
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .landing-description {
+    font-size: 1rem;
+  }
+
+  .blog-page-link {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
