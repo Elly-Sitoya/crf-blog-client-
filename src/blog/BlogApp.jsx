@@ -1,8 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register.jsx";
 import Home from "./components/Homepage/Home";
-import Landing from "../components/Landing/Landing";
 
 import Blog from "./components/Blog/Blog";
 import Navbar from "./components/Navbar/Navbar";
@@ -18,28 +17,25 @@ import Share from "./components/AdditionalPages/Share";
 
 function BlogApp() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
+    <Routes>
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/register" element={<Register />} />
 
-        <Route exact path="/" element={<Landing />} />
-        <Route exact path="/blogs" element={<Home />} />
-        <Route path="/blog/:id" element={<Blog />} />
+      <Route exact path="/blogs" element={<Home />} />
+      <Route path="/blog/:id" element={<Blog />} />
 
-        <Route exact path="/navbar" element={<Navbar />} />
-        <Route exact path="/edit/:id" element={<EditProfile />} />
-        <Route exact path="/profile/:id" element={<Profile />} />
-        <Route exact path="/tag/:id" element={<Tag />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/notifications" element={<Pending />} />
-        <Route exact path="/bookmarks" element={<Bookmark />} />
-        <Route exact path="/write" element={<Write />} />
-        <Route exact path="/share" element={<Share />} />
+      <Route exact path="/navbar" element={<Navbar />} />
+      <Route exact path="/edit/:id" element={<EditProfile />} />
+      <Route exact path="/profile/:id" element={<Profile />} />
+      <Route exact path="/tag/:id" element={<Tag />} />
+      <Route path="/search" element={<Search />} />
+      <Route path="/notifications" element={<Pending />} />
+      <Route exact path="/bookmarks" element={<Bookmark />} />
+      <Route exact path="/write" element={<Write />} />
+      <Route exact path="/share" element={<Share />} />
 
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </Router>
+      <Route path="*" element={<Error />} />
+    </Routes>
   );
 }
 
