@@ -1,20 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "../Login/Login";
-import Register from "../Register/Register.jsx";
-import Home from "../Homepage/Home";
-import Landing from "../Landing/Landing";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register.jsx";
+import Home from "./components/Homepage/Home";
+import Landing from "../components/Landing/Landing";
 
-import Blog from "../Blog/Blog";
-import Navbar from "../Navbar/Navbar";
-import Profile from "../Profile/Profile";
-import EditProfile from "../Editprofile/EditProfile";
-import Tag from "../Tagwise/Tag";
-import Search from "../Search/Search";
-import Error from "../AdditionalPages/Error";
-import Pending from "../AdditionalPages/Pending";
-import Bookmark from "../Bookmark/Bookmark";
-import Write from "../Write/Write";
-import Share from "../AdditionalPages/Share";
+import Blog from "./components/Blog/Blog";
+import Navbar from "./components/Navbar/Navbar";
+import Profile from "./components/Profile/Profile";
+import EditProfile from "./components/Editprofile/EditProfile";
+import Tag from "./components/Tagwise/Tag";
+import Search from "./components/Search/Search";
+import Error from "./components/AdditionalPages/Error";
+import Pending from "./components/AdditionalPages/Pending";
+import Bookmark from "./components/Bookmark/Bookmark";
+import Write from "./components/Write/Write";
+import Share from "./components/AdditionalPages/Share";
 
 function BlogApp() {
   return (
@@ -44,4 +44,3 @@ function BlogApp() {
 }
 
 export default BlogApp;
-

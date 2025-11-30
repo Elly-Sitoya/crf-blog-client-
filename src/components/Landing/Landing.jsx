@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import './Landing.css'
-import logo from '../../assets/travelbrain-logo.svg'
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Landing.css";
+import logo from "../../blog/assets/travelbrain-logo.svg";
 
 function Landing() {
   return (
@@ -13,7 +13,8 @@ function Landing() {
           </div>
           <h1 className="landing-title">Welcome to Our Blog</h1>
           <p className="landing-description">
-            Discover amazing stories, insights, and ideas from our community of writers.
+            Discover amazing stories, insights, and ideas from our community of
+            writers.
           </p>
           <Link to="/blogs" className="blog-page-link">
             Blog Page
@@ -21,8 +22,7 @@ function Landing() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Landing
-
+export default Landing;
